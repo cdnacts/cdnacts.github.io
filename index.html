@@ -3,9 +3,26 @@
   <head>
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<style>
-@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'),local('Roboto-Regular'),local('sans-serif'),url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'),local('Roboto-Bold'),local('sans-serif'),url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Roboto;font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'),local('Roboto-Bold'),local('sans-serif'),url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-</style>
+<script type='text/javascript'>
+	//<![CDATA[
+	//CSS Ready 
+	cookieChoices = {};
+	function loadCSS(e, t, n) {
+					"use strict";
+					var i = window.document.createElement("link");
+					var o = t || window.document.getElementsByTagName("script")[0];
+					i.rel = "stylesheet";
+					i.href = e;
+					i.media = "only x";
+					o.parentNode.insertBefore(i, o);
+					setTimeout(function() {
+									i.media = n || "all"
+					})
+	}
+	loadCSS("//fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i");
+	loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+	//]]>
+	</script>
 <script>
     //<![CDATA[
     /* shinsenter/defer.js */
@@ -773,7 +790,7 @@ Menu Halaman Statis
                     !function(){var E,j,t={infiniteScrollNav:!0};for(var e in linkMagzSetting)"undefined"!=linkMagzSetting[e]&&(t[e]=linkMagzSetting[e]);1==t.infiniteScrollNav&&(E=window,j=document,E.InfiniteScroll=function(t){function d(t,e){return(e=e||j).querySelectorAll(t)}function r(t){return void 0!==t}function o(t){return"function"==typeof t}function f(t,e){if(r(i[t]))for(var n in i[t])i[t][n](e)}function n(){return l.innerHTML=u.text.loading,p=!0,v?(T.classList.add(u.state.loading),f("loading",[u]),void e(v,function(t,e){T.className=H+" "+u.state.load,(g=j.createElement("div")).innerHTML=t;var n=d("title",g),r=d(u.target.post,g),o=d(u.target.anchors+" "+u.target.anchor,g),i=d(u.target.post,h);if(n=n&&n[0]?n[0].innerHTML:"",r.length&&i.length){var a=i[i.length-1];j.title=n,a.insertAdjacentHTML("afterend",'<span class="fi" id="#fi:'+S+'"></span>'),g=j.createElement("div");for(var l=0,s=r.length;l<s;++l)g.appendChild(r[l]);a.insertAdjacentHTML("afterend",g.innerHTML),c(),v=!!o.length&&o[0].href,p=!1,S++,f("load",[u,t,e])}},function(t,e){T.classList.add(u.state.error),p=!1,c(1),f("error",[u,t,e])})):(T.classList.add(u.state.loaded),l.innerHTML=u.text.loaded,f("loaded",[u]))}function c(t){if(l.innerHTML="",a){g.innerHTML=u.text[t?"error":"load"];var e=g.firstChild;e.onclick=function(){return 2===u.type&&(a=!1),n(),!1},l.appendChild(e)}}var u={target:{posts:".posts",post:".post",anchors:".anchors",anchor:".anchor"},text:{load:"%s",loading:"%s",loaded:"%s",error:"%s"},state:{load:(e="infinite-scroll-state-")+"load",loading:e+"loading",loaded:e+"loaded",error:e+"error"}},i={load:[],loading:[],loaded:[],error:[]};(u=function t(e,n){for(var r in e=e||{},n)e[r]="object"==typeof n[r]?t(e[r],n[r]):n[r];return e}(u,t||{})).on=function(t,e,n){return r(t)?r(e)?void(r(n)?i[t][n]=e:i[t].push(e)):i[t]:i},u.off=function(t,e){r(e)?delete i[t][e]:i[t]=[]};var g=null,e=function(t,e,n){if(E.XMLHttpRequest){var r=new XMLHttpRequest;r.onreadystatechange=function(){if(4===r.readyState){if(200!==r.status)return void(n&&o(n)&&n(r.responseText,r));e&&o(e)&&e(r.responseText,r)}},r.open("GET",t),r.send()}},a=1!==u.type,p=!1,h=d(u.target.posts)[0],l=d(u.target.anchors)[0],v=d(u.target.anchor,l),s=j.body,T=j.documentElement,H=T.className||"",L=h.offsetTop+h.offsetHeight,M=E.innerHeight,m=0,y=null,S=1;if(v.length){v=v[0].href,h.insertAdjacentHTML("afterbegin",'<span class="fi" id="#fi:0"></span>'),g=j.createElement("div"),c();function x(){L=h.offsetTop+h.offsetHeight,M=E.innerHeight,m=s.scrollTop||T.scrollTop,p||m+M<L||n()}x(),0!==u.type&&E.addEventListener("scroll",function(){a||(y&&E.clearTimeout(y),y=E.setTimeout(x,500))},!1)}return u})}();
             //]]>
 </script>
-              
+
 
 <script>
             //<![CDATA[
@@ -801,21 +818,21 @@ Menu Halaman Statis
 
 <script>
             //<![CDATA[
-            
+
                 function customFeaturedPostSnippet(){var e=document.querySelector(".featured-info .featured-desc"),t=document.querySelector(".featured-info .js-featured-desc");null!==t&&(e.innerHTML=t.innerHTML.slice(4,-3))}function customPostSnippet(){for(var e,t,n=document.querySelectorAll(".post-outer"),o=0;o<n.length;o++)e=n[o].querySelector(".post-snippet"),null!==(t=n[o].querySelector(".js-post-snippet"))&&(e.innerHTML=t.innerHTML.slice(4,-3))}customFeaturedPostSnippet(),customPostSnippet(),"undefined"!=typeof infinite_scroll&&infinite_scroll.on("load",function(){customPostSnippet()});
             //]]>
 </script>
-    
+
 
 <script>
-            //<![CDATA[        
+            //<![CDATA[
             var media_loaded = function (media) {
                 media.className += ' shown';
                 media.classList.remove("blur-up");
             }
             deferimg('img.lazyload', 80, 'lazied', media_loaded);
 
-            if (typeof infinite_scroll !== 'undefined') { 
+            if (typeof infinite_scroll !== 'undefined') {
                 infinite_scroll.on('load', function() {
                     deferimg('img.lazyload', 80, 'lazied', media_loaded);
                 });
